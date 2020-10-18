@@ -1,0 +1,13 @@
+sampleApp:
+  meta:
+    name: sample-app
+    label: sample-app
+    namespace: default
+    replicas: 1
+  image:
+    repository: 200901485389.dkr.ecr.ap-south-1.amazonaws.com/sample-app
+    tag: latest 
+  service:
+    type: LoadBalancer
+    port: 80
+    targetport: 8080

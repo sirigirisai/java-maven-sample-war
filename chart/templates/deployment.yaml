@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.sampleApp.meta.name }}
+  namespace: {{ .Values.sampleApp.meta.namespace }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.sampleApp.meta.label }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.sampleApp.meta.label }}
+    spec:
+      containers:
+        - name: {{ .Values.sampleApp.meta.label }}
+          image: {{ .Values.sampleApp.image.repository }}:{{ .Values.sampleApp.image.tag }}
+          imagePullPolicy: Always
