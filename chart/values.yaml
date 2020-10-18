@@ -5,7 +5,7 @@ sampleApp:
     namespace: default
     replicas: 1
   image:
-    repository: 200901485389.dkr.ecr.ap-south-1.amazonaws.com/sample-app
+    repository: 200901485389.dkr.ecr.us-east-1.amazonaws.com/sample-app
     tag: latest 
   service:
     type: LoadBalancer
