@@ -10,6 +10,6 @@ phases:
       - build completed successfully
 artifacts:  
   files: 
-    - target/java-art.war
+    - target/Example-0.0.1-SNAPSHOT.war
   discard-paths: yes
   
