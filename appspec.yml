@@ -23,7 +23,7 @@ os: linux
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  - source: Example-0.0.1-SNAPSHOT.war
+  - source: / #Example-0.0.1-SNAPSHOT.war
     destination: /usr/share/apache-tomcat-9.0.39/webapps/
 
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
