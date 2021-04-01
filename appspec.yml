@@ -24,7 +24,7 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: Example-0.0.1-SNAPSHOT.war
-    destination: /usr/share/apache-tomcat-9.0.39/webapps/app.war
+    destination: /usr/share/apache-tomcat-9.0.39/webapps/sample/
   - source:
     destination:
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
