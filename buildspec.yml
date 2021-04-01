@@ -10,7 +10,7 @@ phases:
       - echo build completed successfully
 artifacts:  
   files: 
-    - target/Example-0.0.1-SNAPSHOT.war
+    - Example-0.0.1-SNAPSHOT.war
     - appspec.yml
   discard-paths: yes
   
